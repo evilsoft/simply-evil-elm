@@ -1,0 +1,29 @@
+{
+  "name": "evil-elm",
+  "version": "0.0.1",
+  "description": "A simple boilerplate for my frontend applications",
+  "main": "index.js",
+  "repository": "https://github.com/evilsoft/simply-evil-elm",
+  "scripts": {
+    "html": "pug src/pages -o dev -w",
+    "serve": "browser-sync start --config bs.config.js",
+    "bundle": "webpack",
+    "prebuild": "rm -Rf dist && mkdir -p dist",
+    "build": "webpack",
+    "prestart": "rm -Rf dev && mkdir -p dev",
+    "start": "npm-run-all --parallel bundle serve html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Hofmann-Hicks (evil)",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.17.x",
+    "elm": "0.17.x",
+    "elm-webpack-loader": "3.0.x",
+    "file-loader": "0.9.x",
+    "npm-run-all": "3.1.x",
+    "pug-cli": "^1.0.0-alpha6",
+    "webpack": "1.13.x",
+    "webpack-merge": "^0.14.1"
+  }
+}

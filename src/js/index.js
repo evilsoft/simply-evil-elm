@@ -1,3 +1,5 @@
+require('../less/main.less')
+
 const Elm = require('../elm/Main.elm')
 const node = document.getElementById('main')
 

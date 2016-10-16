@@ -1,6 +1,6 @@
 module Main exposing (..)
 
-import Html exposing (Html, div, text)
+import Html exposing (Html, div, h1, text)
 import Html.App
 
 -- MODEL
@@ -20,7 +20,7 @@ type Msg
 -- VIEW
 view : Model -> Html Msg
 view model =
-  div [] [ text model ]
+  h1 [] [ text model ]
 
 
 -- UPDATE

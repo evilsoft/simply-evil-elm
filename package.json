@@ -1,6 +1,6 @@
 {
   "name": "simply-evil-elm",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A simple boilerplate for my frontend elm applications",
   "main": "index.js",
   "repository": "https://github.com/evilsoft/simply-evil-elm",
@@ -19,18 +19,18 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "2.17.x",
-    "css-loader": "^0.25.0",
+    "css-loader": "0.25.x",
     "elm": "0.17.x",
     "elm-webpack-loader": "3.0.x",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "extract-text-webpack-plugin": "1.0.x",
     "file-loader": "0.9.x",
-    "less": "^2.7.1",
-    "less-loader": "^2.2.3",
-    "less-plugin-autoprefix": "^1.5.1",
+    "less": "2.7.x",
+    "less-loader": "2.2.x",
+    "less-plugin-autoprefix": "1.5.x",
     "npm-run-all": "3.1.x",
-    "pug-cli": "^1.0.0-alpha6",
-    "style-loader": "^0.13.1",
+    "pug-cli": "1.0.0-alpha6",
+    "style-loader": "0.13.x",
     "webpack": "1.13.x",
-    "webpack-merge": "^0.14.1"
+    "webpack-merge": "0.14.x"
   }
 }

@@ -63,3 +63,6 @@ This is the command to run when you are releasing your awesome into the universe
 * Clean out any old, nasty bits inside of the `dist/` folder.
 * Ensure that the `dist/` folder exists.
 * Build all assets and deposit the results in `dist/`. These assets will be stripped of any dead code paths, uglified and minified.
+
+### `$ npm run elm-install [package-name]`
+This is the command to run when you want to install a package from the elm repository. This is needed to allow including `elm` as a development dependency. It keeps you from having to write something like `$ ./node_modules/.bin/elm-package install elm-lang/dom`. By default this will add the dependency to your `elm-package.json` file and approve any plans.

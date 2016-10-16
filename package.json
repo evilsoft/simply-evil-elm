@@ -5,9 +5,10 @@
   "main": "index.js",
   "repository": "https://github.com/evilsoft/simply-evil-elm",
   "scripts": {
+    "elm-install": "elm-package install -y",
     "html": "pug src/pages -o dev -w",
     "serve": "browser-sync start --config bs.config.js",
-    "postinstall": "elm-package install -y",
+    "postinstall": "npm run elm-install",
     "bundle": "webpack",
     "prebuild": "rm -Rf dist && mkdir -p dist",
     "build": "webpack",

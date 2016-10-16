@@ -7,6 +7,7 @@
   "scripts": {
     "html": "pug src/pages -o dev -w",
     "serve": "browser-sync start --config bs.config.js",
+    "postinstall": "elm-package install -y",
     "bundle": "webpack",
     "prebuild": "rm -Rf dist && mkdir -p dist",
     "build": "webpack",

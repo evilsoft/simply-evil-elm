@@ -1,6 +1,6 @@
 module Main exposing (..)
 
-import Html exposing (Html, div, h1, text)
+import Html exposing (Html, h1, text)
 import Html.App
 
 -- MODEL

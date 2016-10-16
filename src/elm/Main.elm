@@ -3,6 +3,18 @@ module Main exposing (..)
 import Html exposing (Html, h1, text)
 import Html.App
 
+
+-- MAIN
+main : Program Never
+main =
+  Html.App.program
+    { init = init
+    , view = view
+    , update = update
+    , subscriptions = subscriptions
+    }
+
+
 -- MODEL
 type alias Model =
   String
@@ -17,12 +29,6 @@ type Msg
   = Noop
 
 
--- VIEW
-view : Model -> Html Msg
-view model =
-  h1 [] [ text model ]
-
-
 -- UPDATE
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
@@ -31,17 +37,13 @@ update msg model =
       ( model, Cmd.none )
 
 
+-- SUBSCRIPTIONS
 subscriptions : Model -> Sub Msg
 subscriptions model =
   Sub.none
 
 
--- MAIN
-main : Program Never
-main =
-  Html.App.program
-    { init = init
-    , view = view
-    , update = update
-    , subscriptions = subscriptions
-    }
+-- VIEW
+view : Model -> Html Msg
+view model =
+  h1 [] [ text model ]
